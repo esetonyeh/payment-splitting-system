@@ -204,7 +204,6 @@
     none
   )
 )
-
 ;; Get member join order
 (define-read-only (get-member-join-order)
   (var-get member-counter)
