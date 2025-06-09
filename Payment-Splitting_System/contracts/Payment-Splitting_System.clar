@@ -110,7 +110,6 @@
     (ok true)
   )
 )
-
 ;; Deposit payment to band
 (define-public (deposit-payment (band-id uint) (amount uint))
   (let ((band-info (unwrap! (map-get? bands { band-id: band-id }) ERR-BAND-NOT-FOUND))
