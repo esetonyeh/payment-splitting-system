@@ -95,7 +95,6 @@
     (ok true)
   )
 )
-
 ;; Update member percentage (only band owner)
 (define-public (update-member-percentage (band-id uint) (member principal) (new-percentage uint))
   (let ((band-info (unwrap! (map-get? bands { band-id: band-id }) ERR-BAND-NOT-FOUND))
