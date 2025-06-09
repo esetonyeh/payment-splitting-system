@@ -147,7 +147,6 @@
     )
   )
 )
-
 ;; Withdraw individual member earnings
 (define-public (withdraw-earnings (band-id uint))
   (let ((member-info (unwrap! (map-get? band-members { band-id: band-id, member: tx-sender }) ERR-MEMBER-NOT-FOUND))
