@@ -129,7 +129,6 @@
     (ok true)
   )
 )
-
 ;; Emergency withdraw all funds (band owner only)
 (define-public (emergency-withdraw (band-id uint))
   (let ((band-info (unwrap! (map-get? bands { band-id: band-id }) ERR-BAND-NOT-FOUND))
