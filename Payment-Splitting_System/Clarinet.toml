@@ -1,0 +1,19 @@
+[project]
+name = 'Payment-Splitting_System'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Payment-Splitting_System]
+path = 'contracts/Payment-Splitting_System.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
